@@ -28,6 +28,6 @@ Examining the conversation through the follow option, we can see that the comman
 
 Exiting out of the popup window we can see a bunch of packets, but none of them seem to have the actual data of the transferred file... we can see the Source and Destination of the packets, so we can search for other packets matching this by using the display filter `ip.src == 10.10.10.20 && ip.dst == 10.10.10.10`.
 This filter shows us all the packets(data) going from the first computer to the second. Here we see a couple new packets that didn't show when following the conversation all under the protocol `FTP-DATA`. All of them have (STOR flag.png) in the description, and are sent right after the command we saw earlier.
-We can right click and follow tcp stream to see the full data, then click `Save as...` on the bottom right of the popup. Name the file with a .png extension, then open the file and see the contents to finish this challenge!
+We can right click and follow tcp stream to see the full data, then click `Save as...` on the bottom right of the popup. Name the file with a .png extension, then open the file and see the contents to finish this challenge! You might need to change the display-as option to RAW if the image isnt viewable.
 
 Ignore the 1 part lol, I was going to make more but got pre-occupied with other parts of making sure the competition would be enjoyable.
